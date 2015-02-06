@@ -11,6 +11,8 @@
 		<div>
 			Created At: <%=task.created_at%>
 		</div>
+		 <%= button_to "New Task", new_task_path, :class => "button", method: :get  %>
+		<%= button_to "Delete", task, method: :delete %>
 	</li>
 	<%end%>
 </ul>
